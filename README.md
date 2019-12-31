@@ -20,10 +20,9 @@ The Hub is the central point of control for Appsody Stacks where you can find av
 Appsody CLI allows developers use already build stacks and  bring them into their local development environment. From here, they can build, run, test, and deploy applications locally. Once they are done with their local development can containerize it and deploy on the cloud.
 
 
- 
+ ![GitHub Logo](images/appsodystack.png)
 
 
-Let’s move to lab part:
-
-Follow the below steps to make your first Appsody Application:
+## Let’s move to lab part:
+Follow the below steps to deploy your first application using Appsody:
 
