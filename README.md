@@ -23,12 +23,47 @@ Appsody CLI allows developers use already build stacks and  bring them into thei
 ![GitHub Logo](images/appsodystack.png)
 
 
+
 # Let’s move to lab part:
 Follow the below steps to deploy your first application using Appsody:
 Application (Nodejs with express) . 
+*IMPORTANT NOTE*
+You must have docker installed on your local machine . 
+Get Docker from here :https://docs.docker.com/install/
+
 
 ## Step 1: Clone the application
+![GitHub Logo](images/s1.png)
 https://github.com/mahsankhaan/appsody.git
+
+## Step 2:Open the application in Visual Code
+![GitHub Logo](images/s2.png)
+
+## Step 3:Install Appsody
+https://appsody.dev/docs/getting-started/installation
+
+## Step 4: Initialize Appsody in our application
+ .First, choose a stack that closely resembles your existing project.
+ .Use appsody list to view the available stacks'
+ .As we are using Node.js with express so we will use that stack.
+ 
+![GitHub Logo](images/s4.png)
+
+ .Run Appsody init command to create the templete
+ .Once the templete is successfully intailized , there will be  ".appsody-config.yml" created.
+
+
+![GitHub Logo](images/s5.png)
+
+## Step 5: Let's do some local development
+
+When a source code project is initialized with Appsody, you get a local Appsody development container. "Appsody run" starts the development container in run mode in the foreground. Appsody watches your local project directory for file changes and updates the application to reflect code changes as you develop.
+
+![GitHub Logo](images/s6.png)
+
+Our container is running on PORT 3000.
+
+![GitHub Logo](images/s7.png)
 
 
 
