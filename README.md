@@ -27,9 +27,11 @@ Appsody CLI allows developers use already build stacks and  bring them into thei
 # Let’s move to lab part:
 Follow the below steps to deploy your first application using Appsody:
 Application (Nodejs with express) . 
+
 *IMPORTANT NOTE*
 You must have docker installed on your local machine . 
-Get Docker from here :https://docs.docker.com/install/
+1.Get Docker from here :https://docs.docker.com/install/
+2. We are using Visual Studio Code for local development :https://code.visualstudio.com/
 
 
 ## Step 1: Clone the application
