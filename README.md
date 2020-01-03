@@ -1,4 +1,4 @@
-# Application Modernization using Appsody 
+# Do local development, containerize and migrate to Docker Hub using Appsody
 
 
 Only 30% of enterprises migrated to Cloud other 70% want's to but due to insufficient technical knowledge in app modernization they can’t migrate their on prem data to Cloud. As for that they need to apply various technology stacks before moving to Cloud some of them are Docker, Containerization, Kubernetes , CI/CD and many others.
