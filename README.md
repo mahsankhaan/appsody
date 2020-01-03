@@ -66,9 +66,30 @@ Our container is running on PORT 3000.
 ![GitHub Logo](images/s7.png)
 
 
+## Step 6: Now we can build our application 
+When we've finished the local development work for our Appsody project,we will containeried our application and upload it on Docker Hub, so that we can easily deploy it to a suitable runtime infrastructure such as IBM cloud platform or any other.
+
+1. We will use the "appsody build" command to generate a deployment Docker image without writing any dockerfile.
+
+![GitHub Logo](images/s8.png)
 
 
+2.Once your image is successfully built , we will be able to see "app-deploy.yml".
 
+![GitHub Logo](images/s9.png)
+
+3. Run "docker images" command and see your image is created on your local machine.
+
+![GitHub Logo](images/s10.png)
+
+
+4. Let's login into Docker and create repository.
+
+![GitHub Logo](images/s11.png)
+
+5. Finally push the image to Docker Hub and access the image any where .
+
+![GitHub Logo](images/s12.png)
 
 
 
