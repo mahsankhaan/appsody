@@ -5,8 +5,7 @@ Only 30% of enterprises migrated to Cloud other 70% want's to but due to insuffi
 
 What if we could have single integrated platform , that contains all these platforms  ? 
 
-“Appsody” is designed to help you develop containerized applications for the cloud.
-Now enterprises just need to focus on their business and let Appsody build applications for the cloud that are ready to be deployed to Kubernetes without being an expert on the underlying container technology. 
+This tutorial aim to greatly improve developers experience by removing the burden of managing the full software development stack. With Appsody, now developers can do local development, build and deploy applications to the Docker Hub so they can use it anywhere for the cloud or any platform that support docker images , without being an expert on the underlying container technology. You can simply focus on the important stuff - developing application code!
 
 There are 3 main key components:
 
