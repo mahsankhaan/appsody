@@ -91,5 +91,8 @@ When we've finished the local development work for our Appsody project,we will c
 
 ![GitHub Logo](images/s12.png)
 
+6 . Check your local image is successfully uploaded to your Docker Registry.In the future you can pull the image any anywhere by using "docker pull ahsanoffical/appsody:testing" command.
+
+ ![GitHub Logo](images/s13.png)
 
 
