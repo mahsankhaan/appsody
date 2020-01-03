@@ -66,7 +66,7 @@ Our container is running on PORT 3000.
 ![GitHub Logo](images/s7.png)
 
 
-## Step 6: Now we can build our application 
+## Step 6: Now it's time to build and deploy our application on Docker Hub
 When we've finished the local development work for our Appsody project,we will containeried our application and upload it on Docker Hub, so that we can easily deploy it to a suitable runtime infrastructure such as IBM cloud platform or any other.
 
 1. We will use the "appsody build" command to generate a deployment Docker image without writing any dockerfile.
