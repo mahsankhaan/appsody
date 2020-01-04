@@ -84,7 +84,7 @@ When we've finished the local development work for our Appsody project,we will c
 ![GitHub Logo](images/s10.png)
 
 
-4. Let's login into Docker and create repository.
+4. Let's login into Docker Hub and create a new repository.
 
 ![GitHub Logo](images/s11.png)
 
