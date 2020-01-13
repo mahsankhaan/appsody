@@ -46,8 +46,8 @@ else{
 }
    
 });
-module.exports.app = app;
-/*app.listen(3000 , function(){
+//module.exports.app = app;
+app.listen(3000 , function(){
     console.log("App is running");
 
-});*/
+});
