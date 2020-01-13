@@ -1,64 +1,54 @@
 # Do local development, containerize and migrate to Docker Hub using Appsody
 
+In this tutorial, I show you how to use a new open source project, Appsody, to create an application locally and then build and deploy that application to a Docker Hub so you can use it on any cloud or platform that supports Docker images. After completing this tutorial, you will see how Appsody enables you to containerize a Node.js Express application without having to be an expert in container technology. 
 
-Only 30% of enterprises migrated to Cloud other 70% want's to but due to insufficient technical knowledge in app modernization they can’t migrate their on prem data to Cloud. As for that they need to apply various technology stacks before moving to Cloud some of them are Docker, Containerization, Kubernetes , CI/CD and many others.
+## Prerequisites
 
-What if we could have single integrated platform , that contains all these platforms  ? 
+To complete the steps in this tutorial, you need to:
+1. Be familiar with Appsody and [install an instance on your machine](https://appsody.dev/docs/getting-started/installation).
+1. [Install Docker](https://docs.docker.com/install/) on your local machine.
+1. Have an instance of [Visual Studio Code](https://code.visualstudio.com/) set up for local development.
 
-This tutorial aim to greatly improve developers experience by removing the burden of managing the full software development stack. With Appsody, now developers can do local development, build and deploy applications to the Docker Hub so they can use it anywhere for the cloud or any platform that support docker images , without being an expert on the underlying container technology. You can simply focus on the important stuff - developing application code!
+## Steps
 
-There are 3 main key components:
+1. [Clone the application](#1-clone-the-application)
+1. [Open the application in Visual Code](#2-open-the-application-in-visual-code)
+1. [Initialize Appsody in your application](#3-initialize-appsody-in-your-application)
+1. [Change the application on your local machine](#4-make-local-changes-to-your-application)
+1. [Build and deploy the application to Docker Hub](#5-build-and-deploy-the-application-to-docker-hub)
 
-## Appsody Stacks:
-Already built stack and frameworks that only need to be configured into your project such as Java with Eclipse MicroProfile and Node.js with Express
+## 1: Clone the application
+I'll show you the steps in this tutorial using an application in this [GitHub repo](https://github.com/mahsankhaan/appsody.git).
 
-## Appsody Hub:
-The Hub is the central point of control for Appsody Stacks where you can find available stacks. create new stacks, or modify existing ones. 
+Go to the GitHub location and click **Clone or download**.<!--EM: After they click Clone or download, what do they do? Do they download the zip or open on their machine?-->
 
-## Appsody CLI:
-Appsody CLI allows developers use already build stacks and  bring them into their local development environment. From here, they can build, run, test, and deploy applications locally. Once they are done with their local development can containerize it and deploy on the cloud.
-
-
-![GitHub Logo](images/appsodystack.png)
-
-
-
-# Let’s move to lab part:
-Follow the below steps to deploy your first application using Appsody:
-Application (Nodejs with express) . 
-
-*IMPORTANT NOTE*
-You must have docker installed on your local machine . 
-1.Get Docker from here :https://docs.docker.com/install/
-2. We are using Visual Studio Code for local development :https://code.visualstudio.com/
-
-
-## Step 1: Clone the application
 ![GitHub Logo](images/s1.png)
-https://github.com/mahsankhaan/appsody.git
 
-## Step 2:Open the application in Visual Code
+## 2:Open the application in Visual Code
+<!--EM: How do they do that? Do they do that in the above step when they click "Open on their machine?-->
 ![GitHub Logo](images/s2.png)
 
-## Step 3:Install Appsody
-https://appsody.dev/docs/getting-started/installation
+## 3: Initialize Appsody in our application
+<!--EM: need to add additional steps here. I made Installing Appsody part of hte prerequisites, but here do they open the Appsody CLI and then do these steps?-->
+To initialize Appsody:
 
-## Step 4: Initialize Appsody in our application
- .First, choose a stack that closely resembles your existing project.
- .Use appsody list to view the available stacks'
- .As we are using Node.js with express so we will use that stack.
+1. From the CLI, enter `appsody list` to view all the available Appsody stacks.
+1. Review the list of stacks and find one that closely resembles your existing project. The sample application in this tutorial is a Node.js Express app, so we select that.
+
+<!--EM: How do they select a stack?
  
-![GitHub Logo](images/s4.png)
+    ![GitHub Logo](images/s4.png)
 
- .Run Appsody init command to create the templete
- .Once the templete is successfully intailized , there will be  ".appsody-config.yml" created.
-
+1. Run `appsody init` command to create the template. <!--EM: Does this need to be appsody init plus the name of the template that they're choosing?-->
+1. Once the templete is successfully intailized, you should see an `.appsody-config.yml` file in the left navigation of your Visual Code editor.
 
 ![GitHub Logo](images/s5.png)
 
-## Step 5: Let's do some local development
+## 4: Make local changes to your application
 
-When a source code project is initialized with Appsody, you get a local Appsody development container. "Appsody run" starts the development container in run mode in the foreground. Appsody watches your local project directory for file changes and updates the application to reflect code changes as you develop.
+When you initialize a a source code project with Appsody, you get a local Appsody development container. Use the `appsody run` command to start the development container in `run` mode in the foreground. Appsody watches your local project directory for file changes and updates the application to reflect code changes as you develop.
+
+<!--EM: Are we asking the reader to make changes? What are they looking for in their editor? Why are there "Warn" messages in that image? What is up with the PORT 3000?-->
 
 ![GitHub Logo](images/s6.png)
 
@@ -66,34 +56,33 @@ Our container is running on PORT 3000.
 
 ![GitHub Logo](images/s7.png)
 
+## 5: Build and deploy your application on Docker Hub
 
-## Step 6: Now it's time to build and deploy our application on Docker Hub
-When we've finished the local development work for our Appsody project,we will containeried our application and upload it on Docker Hub, so that we can easily deploy it to a suitable runtime infrastructure such as IBM cloud platform or any other.
+After you've finished creating your Appsody application on your local system, you can deploy it to a container platform. We'll show you how to containerize it and upload it to Docker Hub, so you can easily deploy it to a suitable runtime infrastructure such as IBM Cloud.
 
-1. We will use the "appsody build" command to generate a deployment Docker image without writing any dockerfile.
+1. Use the `appsody build` command to generate a deployment Docker image without writing a dockerfile.
 
 ![GitHub Logo](images/s8.png)
 
-
-2.Once your image is successfully built , we will be able to see "app-deploy.yml".
+2. After your image is successfully built, you should see the `app-deploy.yml` file in the left navigation.
 
 ![GitHub Logo](images/s9.png)
 
-3. Run "docker images" command and see your image is created on your local machine.
+3. Run the `docker images` command to see your image on your local machine.
 
 ![GitHub Logo](images/s10.png)
 
-
-4. Let's login into Docker Hub and create a new repository.
+4. Now, log into Docker Hub and create a new repository.<!--EM: How?-->
 
 ![GitHub Logo](images/s11.png)
 
-5. Finally push the image to Docker Hub and access the image any where .
+5. Finally push the image to Docker Hub and access the image any where . <!--EM: How?-->
 
 ![GitHub Logo](images/s12.png)
 
-6 . Check your local image is successfully uploaded to your Docker Registry.In the future you can pull the image any anywhere by using "docker pull ahsanoffical/appsody:testing" command.
+6 . Check your local image is successfully uploaded to your Docker Registry. In the future, you can pull the image anywhere by using the `docker pull ahsanoffical/appsody:testing` command.
 
  ![GitHub Logo](images/s13.png)
 
-
+## Conclusion
+<!--EM: Need to add a conclusion tying up what the user learned. -->
