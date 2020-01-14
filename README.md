@@ -8,8 +8,8 @@ In this tutorial, I show you how to use a new open source project, Appsody, to c
 ## Prerequisites
 
 To complete the steps in this tutorial, you need to:
-1.[Install Docker](https://docs.docker.com/install/) on your local machine.
-2.Install VS code [Visual Studio Code](https://code.visualstudio.com/) set up for local development.
+1. [Install Docker](https://docs.docker.com/install/) on your local machine.
+2. Install VS code [Visual Studio Code](https://code.visualstudio.com/) set up for local development.
 
 ## Steps
 1.	[Clone the application](#1-clone-the-application)
@@ -30,8 +30,7 @@ You must have docker installed on your local machine .
 1.Get Docker from here :https://docs.docker.com/install/
 2. We are using Visual Studio Code for local development :https://code.visualstudio.com/
 
-
-## Step 1: Clone the application
+#1-clone-the-application
 ![GitHub Logo](images/s1.png)
 https://github.com/mahsankhaan/appsody.git
 
