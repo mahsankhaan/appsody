@@ -14,7 +14,7 @@ To complete the steps in this tutorial, you need to:
 ## Steps
 1.	[Clone the application](#1-clone-the-application)
 2.	[Open the application in Visual Code](#2-open-the-application-in-visual-code)
-3.	Install Appsody on your local machine 
+3.	[Install Appsody on your local machine](#3-install-appsody)
 4.	Initialize Appsody in your project
 5.	Change the application on your local machine
 6.	Build and deploy the application to Docker Hub
@@ -38,10 +38,23 @@ To complete the steps in this tutorial, you need to:
 
 1. In this step we assume you have ready installed [Visual Studio Code](https://code.visualstudio.com/) ,if not please do that.
 2.	Once Visual Studio Code is installed , open the application that we cloned. 
+
 ![GitHub Logo](images/s2.png)
 
-## Step 3:Install Appsody
-https://appsody.dev/docs/getting-started/installation
+# 3-install-appsody
+
+Kindly note. Below steps are for **macOS** , if you are on different OS please visit [here](https://appsody.dev/docs/getting-started/installation) for more details.
+
+1. Open your terminal and follow bellow steps:
+
+2.	If you don’t have **Homebrew** installed on your system , install it by running this command:
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+3.	If you have Homebrew then install it by running : 
+brew install appsody/appsody/appsody
+
+4.	To check if Appsody is installed successfully use command **appsody list** in the terminal and you must be able to see the available templates.
+
 
 ## Step 4: Initialize Appsody in our application
  .First, choose a stack that closely resembles your existing project.
