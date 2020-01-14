@@ -111,7 +111,7 @@ After you've finished creating your Appsody application on your local system, yo
 3.	Run the **‘docker images’** command to see your image on your local machine.
 4.	Now, log into **Docker Hub** , if you don’t have an account make it from [Docker-Signup](https://hub.docker.com/signup)
 
-![GitHub Logo](images/s10.png)
+![GitHub Logo](images/s8.png)
 
 ## Create Repository on Docker Hub:
 1.	On the top of your dashboard please select **“Create repository”** .
@@ -121,9 +121,6 @@ After you've finished creating your Appsody application on your local system, yo
 5.	You can use **ahsanoffical/appsody** to push and pull the images.
 
 ![GitHub Logo](images/s11.png)
-
-
-![GitHub Logo](images/s8.png)
 
 
 2.Once your image is successfully built , we will be able to see "app-deploy.yml".
