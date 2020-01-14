@@ -87,23 +87,20 @@ We use **"none”** in above command because we are initializing appsody in exis
 
 When you initialize a source code project with Appsody, you get a local Appsody development container. Use the **‘appsody run’** command to start the development container in ‘run’ mode in the foreground. Appsody watches your local project directory for file changes and updates the application to reflect code changes as you develop.
 
-1.	Open your web browser and put URL localhost:3000 
+1.	Open your web browser and put URL **localhost:3000**
 2.	3000 is the default port to run node.js application
 3.	Application is up and running as a container.
 
-Make some changes to your code and check if it updates: 
-
-1.	In VS Code go to **views -> login.ejs** (this is our login front-end)
-2	There is a label for **“username"** in lower case , make it upper case **“USERNAME”**
-3	Save the updated file **ctrl+some ** 
-4	Again visit the URL localhost:3000 and check for updates
-
-
 ![GitHub Logo](images/s6.png)
 
-Our container is running on PORT 3000.
 
-![GitHub Logo](images/s7.png)
+Make some changes to your code and check for updates: 
+
+1.	In VS Code go to **views -> login.ejs** (this is login front-end page)
+2.	There is a label for **“username"** in lower case , make it upper case **“USERNAME”**
+3.	Save the updated file **ctrl+s** 
+4.	Again visit the URL **localhost:3000** and check for updates.
+
 
 
 ## Step 6: Now it's time to build and deploy our application on Docker Hub
