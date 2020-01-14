@@ -109,18 +109,30 @@ After you've finished creating your Appsody application on your local system, yo
 1.	Use the **‘appsody build’** command to generate a deployment Docker image without writing a dockerfile.
 2.	After your image is successfully built, you should see the **'app-deploy.yml'** file in the left navigation.
 3.	Run the **‘docker images’** command to see your image on your local machine.
-4.	Now, log into **Docker Hub** , if you don’t have an account make it from [Docker-Signup](https://hub.docker.com/signup)
 
 ![GitHub Logo](images/s8.png)
 
 ## Create Repository on Docker Hub:
-1.	On the top of your dashboard please select **“Create repository”** .
-2.	Put Name filed as **“appsody”** and description as **“App modernization using appsody”**
-3.	Then at the bottom of the page select **“Create”** button.
-4.	Registry must be created as **ahsanoffical/appsody**. (username can be different)
-5.	You can use **ahsanoffical/appsody** to push and pull the images.
+1.	Now, log into **Docker Hub** , if you don’t have an account make it from [Docker-Signup](https://hub.docker.com/signup)
+2.	On the top of your dashboard please select **“Create repository”** .
+3.	Put Name filed as **“appsody”** and description as **“App modernization using appsody”**
+4.	Then at the bottom of the page select **“Create”** button.
+5.	Registry must be created as **ahsanoffical/appsody**. (username can be different)
+6.	You can use **ahsanoffical/appsody** to push and pull the images.
 
 ![GitHub Logo](images/s11.png)
+
+
+
+## Push your image to Docker Hub:
+1.	Open your VS Code terminal.
+2.	Run **“docker login”** command
+3.	In above step ,we see our newly created image name is **testing-appsody**
+4.	Run command **“docker tag testing-appsody ahsanoffical/appsody:testing”**
+5.	Check your local image is successfully uploaded to your **Docker Registry**.
+6. In the future, you can pull the image anywhere by using the "docker pull ahsanoffical/appsody:testing" command.
+
+ ![GitHub Logo](images/s13.png)
 
 
 2.Once your image is successfully built , we will be able to see "app-deploy.yml".
