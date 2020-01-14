@@ -137,4 +137,4 @@ After you've finished creating your Appsody application on your local system, yo
  ## Conclusion 
  
 
-In this tutorial we learn how to integrate appsody in Visual Studio Code to minimize the local development workload. We used appsody node.js-express stack , that later helps in creating container and applying continuous integration without been expert in containerization technologies. Once the local development is completed  , we build the image and simply deploy to docker hub so that in future we can deploy the image on IBM Cloud.
+In this tutorial we learn how to integrate appsody in Visual Studio Code to minimize the local development workload. We used appsody node.js-express stack , that later helps in creating container and applying continuous integration without been expert in containerization technologies. Once the local development is completed  , we build the image and simply deploy to docker hub so that in future we can easily migrate and  deploy the image on any cloud platform that supports docker images .
