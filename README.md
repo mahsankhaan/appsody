@@ -125,11 +125,16 @@ After you've finished creating your Appsody application on your local system, yo
 
 
 ## Push your image to Docker Hub:
-1.Open your VS Code terminal.
-2.Run **“docker login”** command
-3.In above step ,we see our newly created image name is **testing-appsody**
-4.Run command **“docker tag testing-appsody ahsanoffical/appsody:testing”**
-5.Check your local image is successfully uploaded to your **Docker Registry**.
-6.In the future, you can pull the image anywhere by using the "docker pull ahsanoffical/appsody:testing" command.
+1. Open your VS Code terminal.
+2. Run **“docker login”** command
+3. In above step ,we see our newly created image name is **testing-appsody**
+4. Run command **“docker tag testing-appsody ahsanoffical/appsody:testing”**
+5. Check your local image is successfully uploaded to your **Docker Registry**.
+6. In the future, you can pull the image anywhere by using the "docker pull ahsanoffical/appsody:testing" command.
 
  ![GitHub Logo](images/s13.png)
+ 
+ ## Conclusion 
+ 
+
+In this tutorial we learn how to integrate appsody in Visual Studio Code to minimize the local development workload. We used appsody node.js-express stack , that later helps in creating container and applying continuous integration without been expert in containerization technologies. Once the local development is completed  , we build the image and simply deploy to docker hub so that in future we can deploy the image on IBM Cloud.
