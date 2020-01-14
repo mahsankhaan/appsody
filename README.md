@@ -21,18 +21,18 @@ To complete the steps in this tutorial, you need to:
 
 
 
-# Let’s move to lab part:
-Follow the below steps to deploy your first application using Appsody:
-Application (Nodejs with express) . 
 
-*IMPORTANT NOTE*
-You must have docker installed on your local machine . 
-1.Get Docker from here :https://docs.docker.com/install/
-2. We are using Visual Studio Code for local development :https://code.visualstudio.com/
 
 # 1-clone-the-application
+1.	I'll show you the steps in this tutorial using an application in this  GitHub repo.
+2.	Open your terminal and change your directory by using command cd downloads .( Or any other directory in which you want to      clone the project)
+3.	Insert command git clone https://github.com/mahsankhaan/appsody.git   
+
 ![GitHub Logo](images/s1.png)
-https://github.com/mahsankhaan/appsody.git
+
+
+
+
 
 ## Step 2:Open the application in Visual Code
 ![GitHub Logo](images/s2.png)
