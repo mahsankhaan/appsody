@@ -24,7 +24,7 @@ To complete the steps in this tutorial, you need to:
 
 
 # 1-clone-the-application
-1.	I'll show you the steps in this tutorial using an application in this  GitHub repo.
+1.	I'll show you the steps in this tutorial using an application in this  [GitHub repo](https://github.com/mahsankhaan/appsody.git)
 2.	Open your terminal and change your directory by using command cd downloads .( Or any other directory in which you want to      clone the project)
 3.	Insert command git clone https://github.com/mahsankhaan/appsody.git   
 
