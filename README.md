@@ -30,7 +30,7 @@ You must have docker installed on your local machine .
 1.Get Docker from here :https://docs.docker.com/install/
 2. We are using Visual Studio Code for local development :https://code.visualstudio.com/
 
-#1-clone-the-application
+# 1-clone-the-application
 ![GitHub Logo](images/s1.png)
 https://github.com/mahsankhaan/appsody.git
 
