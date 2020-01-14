@@ -48,7 +48,7 @@ Kindly note. Below steps are for **macOS** , if you are on different OS please v
 1. Open your terminal and follow bellow steps:
 
 2.	If you don’t have **Homebrew** installed on your system , install it by running this command:
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+**"/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"**
 
 3.	If you have Homebrew then install it by running : 
 brew install appsody/appsody/appsody
