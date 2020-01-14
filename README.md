@@ -1,25 +1,23 @@
 # Do local development, containerize and migrate to Docker Hub using Appsody
 
 
-Only 30% of enterprises migrated to Cloud other 70% want's to but due to insufficient technical knowledge in app modernization they can’t migrate their on prem data to Cloud. As for that they need to apply various technology stacks before moving to Cloud some of them are Docker, Containerization, Kubernetes , CI/CD and many others.
-
-What if we could have single integrated platform , that contains all these platforms  ? 
-
-This tutorial aim to greatly improve developers experience by removing the burden of managing the full software development stack. With Appsody, now developers can do local development, build and deploy applications to the Docker Hub so they can use it anywhere for the cloud or any platform that support docker images , without being an expert on the underlying container technology. You can simply focus on the important stuff - developing application code!
-
-There are 3 main key components:
-
-## Appsody Stacks:
-Already built stack and frameworks that only need to be configured into your project such as Java with Eclipse MicroProfile and Node.js with Express
-
-## Appsody Hub:
-The Hub is the central point of control for Appsody Stacks where you can find available stacks. create new stacks, or modify existing ones. 
-
-## Appsody CLI:
-Appsody CLI allows developers use already build stacks and  bring them into their local development environment. From here, they can build, run, test, and deploy applications locally. Once they are done with their local development can containerize it and deploy on the cloud.
+In this tutorial, I show you how to use a new open source project, Appsody, to create an application locally and then build and deploy that application to a Docker Hub so you can use it on any cloud or platform that supports Docker images. After completing this tutorial, you will see how Appsody enables you to containerize a Node.js Express application without having to be an expert in container technology. 
 
 
-![GitHub Logo](images/appsodystack.png)
+
+## Prerequisites
+
+To complete the steps in this tutorial, you need to:
+1.[Install Docker](https://docs.docker.com/install/) on your local machine.
+2.Install VS code [Visual Studio Code](https://code.visualstudio.com/) set up for local development.
+
+## Steps
+1.	[Clone the application](#1-clone-the-application)
+2.	[Open the application in Visual Code](#2-open-the-application-in-visual-code)
+3.	Install Appsody on your local machine 
+4.	Initialize Appsody in your project
+5.	Change the application on your local machine
+6.	Build and deploy the application to Docker Hub
 
 
 
