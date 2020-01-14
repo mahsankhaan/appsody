@@ -17,7 +17,7 @@ To complete the steps in this tutorial, you need to:
 3.	[Install Appsody on your local machine](#3-install-appsody)
 4. [Initialize Appsody in your project]((#4-initialize-appsody-in-your-project))
 5.	[Change the application on your local machine](#5-change-the-application-on-your-local-machine)
-6.	Build and deploy the application to Docker Hub
+6.	[Build and deploy the application to Docker Hub](#6-build-and-deploy-the-application-to-Docker-Hub)
 
 
 
@@ -26,11 +26,10 @@ To complete the steps in this tutorial, you need to:
 # 1-clone-the-application
 
 1.	I'll show you the steps in this tutorial using an application in this  [GitHub repo](https://github.com/mahsankhaan/appsody.git)
-2.	Open your terminal and change your directory by using command **cd downloads** .( Or any other directory in which you want to      clone the project)
+2.	Open your terminal and change your directory by using command **cd downloads** .( Or any other directory in which you want to clone the project)
 3.	Run command **git clone https://github.com/mahsankhaan/appsody.git**   
 
 ![GitHub Logo](images/s1.png)
-
 
 
 
@@ -103,8 +102,24 @@ Make some changes to your code and check for updates:
 
 
 
-## Step 6: Now it's time to build and deploy our application on Docker Hub
-When we've finished the local development work for our Appsody project,we will containeried our application and upload it on Docker Hub, so that we can easily deploy it to a suitable runtime infrastructure such as IBM cloud platform or any other.
+# 6-build-and-deploy-the-application-to-Docker-Hub
+After you've finished creating your Appsody application on your local system, you can deploy it to a container platform. We'll show you how to containerize it and upload it to Docker Hub, so you can easily deploy it to a suitable runtime infrastructure such as IBM Cloud.
+
+
+1.	Use the **‘appsody build’** command to generate a deployment Docker image without writing a dockerfile.
+2.	After your image is successfully built, you should see the **'app-deploy.yml'** file in the left navigation.
+3.	Run the **‘docker images’** command to see your image on your local machine.
+4.	Now, log into **Docker Hub** , if you don’t have an account make it from [Docker-Signup](https://hub.docker.com/signup)
+
+
+## Create Repository on Docker Hub:
+1.	On the top of your dashboard please select **“Create repository”** .
+2.	Put Name filed as **“appsody”** and description as **“App modernization using appsody”**
+3.	Then at the bottom of the page select **“Create”** button.
+4.	Registry must be created as **ahsanoffical/appsody**. (username can be different)
+5.	You can use **ahsanoffical/appsody** to push and pull the images.
+
+![GitHub Logo](images/s7.png)
 
 1. We will use the "appsody build" command to generate a deployment Docker image without writing any dockerfile.
 
