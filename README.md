@@ -125,35 +125,11 @@ After you've finished creating your Appsody application on your local system, yo
 
 
 ## Push your image to Docker Hub:
-1.	Open your VS Code terminal.
-2.	Run **“docker login”** command
-3.	In above step ,we see our newly created image name is **testing-appsody**
-4.	Run command **“docker tag testing-appsody ahsanoffical/appsody:testing”**
-5.	Check your local image is successfully uploaded to your **Docker Registry**.
-6. In the future, you can pull the image anywhere by using the "docker pull ahsanoffical/appsody:testing" command.
+1.Open your VS Code terminal.
+2.Run **“docker login”** command
+3.In above step ,we see our newly created image name is **testing-appsody**
+4.Run command **“docker tag testing-appsody ahsanoffical/appsody:testing”**
+5.Check your local image is successfully uploaded to your **Docker Registry**.
+6.In the future, you can pull the image anywhere by using the "docker pull ahsanoffical/appsody:testing" command.
 
  ![GitHub Logo](images/s13.png)
-
-
-2.Once your image is successfully built , we will be able to see "app-deploy.yml".
-
-![GitHub Logo](images/s9.png)
-
-3. Run "docker images" command and see your image is created on your local machine.
-
-![GitHub Logo](images/s10.png)
-
-
-4. Let's login into Docker Hub and create a new repository.
-
-![GitHub Logo](images/s11.png)
-
-5. Finally push the image to Docker Hub and access the image any where .
-
-![GitHub Logo](images/s12.png)
-
-6 . Check your local image is successfully uploaded to your Docker Registry.In the future you can pull the image any anywhere by using "docker pull ahsanoffical/appsody:testing" command.
-
- ![GitHub Logo](images/s13.png)
-
-
