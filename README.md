@@ -16,7 +16,7 @@ To complete the steps in this tutorial, you need to:
 2.	[Open the application in Visual Code](#2-open-the-application-in-visual-code)
 3.	[Install Appsody on your local machine](#3-install-appsody)
 4. [Initialize Appsody in your project]((#4-initialize-appsody-in-your-project))
-5.	Change the application on your local machine
+5.	[Change the application on your local machine](#5-change-the-application-on-your-local-machine)
 6.	Build and deploy the application to Docker Hub
 
 
@@ -77,15 +77,27 @@ for more  details check [here](https://appsody.dev/docs/stacks/stacks-overview/)
 5.	Run  **appsody init incubator/nodejs-express none** command to initialize template.
    
 **NOTE**
-We use **"none”** in above template because we are initializing appsody in existing project , if you want to initialize from the start then use  **appsody init incubator/nodejs-express simple** the will create node.js application template with appsody.
+We use **"none”** in above command because we are initializing appsody in existing project , if you want to initialize from start then use  **appsody init incubator/nodejs-express simple**  will create node.js application template with appsody.
 
 6. Once the template is successfully initialized, you should see an **‘.appsody-config.yml’** file in the left navigation of your Visual Code editor.
 
 ![GitHub Logo](images/s5.png)
 
-## Step 5: Let's do some local development
+# 5-change-the-application-on-your-local-machine
 
-When a source code project is initialized with Appsody, you get a local Appsody development container. "Appsody run" starts the development container in run mode in the foreground. Appsody watches your local project directory for file changes and updates the application to reflect code changes as you develop.
+When you initialize a source code project with Appsody, you get a local Appsody development container. Use the **‘appsody run’** command to start the development container in ‘run’ mode in the foreground. Appsody watches your local project directory for file changes and updates the application to reflect code changes as you develop.
+
+1.	Open your web browser and put URL localhost:3000 
+2.	3000 is the default port to run node.js application
+3.	Application is up and running as a container.
+
+Make some changes to your code and check if it updates: 
+
+1.	In VS Code go to **views -> login.ejs** (this is our login front-end)
+2	There is a label for **“username"** in lower case , make it upper case **“USERNAME”**
+3	Save the updated file **ctrl+some ** 
+4	Again visit the URL localhost:3000 and check for updates
+
 
 ![GitHub Logo](images/s6.png)
 
