@@ -59,27 +59,27 @@ Kindly note. Below steps are for **macOS** , if you are on different OS please v
 # 4-initialize-appsody-in-your-project
 
 Before initializing appsody , there are few concepts that needs to be understand: 
-**Stack :**  Appsody uses a already made runtimes and frameworks , such as Java with Eclipse and Node.js with Express.
-**Template :**  Provide a starting point for application development  and you can customize project templates and share them across teams.
-**Repo:** They are categorized as stable(Tested and support all appsody command), incubator(Actively being worked on) or experimental( Experimental stacks are not being actively worked on) depending on the  content of the stack.
+1. **Stack :**  Appsody uses a already made runtimes and frameworks , such as Java with Eclipse and Node.js with Express.
+2. **Template :**  Provide a starting point for application development  and you can customize project templates and share them across teams.
+3. **Repo:** They are categorized as stable(Tested and support all appsody command), incubator(Actively being worked on) or experimental( Experimental stacks are not being actively worked on) depending on the  content of the stack.
 
 for more  details check [here](https://appsody.dev/docs/stacks/stacks-overview/)
-
 
 **Steps to initialize appsody:**
 1.	Open your Visual Studio Code , and use ctrl + shift + `to access CLI from your VS code.
 2.	From the CLI, enter **appsody list** to view all the available Appsody stacks.
 3.	Review the list of stacks and find one that closely resembles your existing project. 
 4. The sample application in this tutorial is a **Node.js Expres app**, so we select that.
+
+
+![GitHub Logo](images/s4.png)
+
 5.	Run **appsody init** command to initialize template.
    -appsody init <repo>/<stack> <template> 
    -appsody init incubator/nodejs-express none
 
 **NOTE**
 We use **“none”** in above template because we are initializing appsody in existing project , if you have your own code and want to initialize from the start then use  **appsody init incubator/nodejs-express simple**
-
-
-![GitHub Logo](images/s4.png)
 
  .Run Appsody init command to create the templete
  .Once the templete is successfully intailized , there will be  ".appsody-config.yml" created.
