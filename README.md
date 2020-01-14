@@ -74,16 +74,12 @@ for more  details check [here](https://appsody.dev/docs/stacks/stacks-overview/)
 
 ![GitHub Logo](images/s4.png)
 
-5.	Run **appsody init** command to initialize template.
-   -appsody init <repo>/<stack> <template> 
-   -appsody init incubator/nodejs-express none
-
+5.	Run  **appsody init incubator/nodejs-express none** command to initialize template.
+   
 **NOTE**
-We use **“none”** in above template because we are initializing appsody in existing project , if you have your own code and want to initialize from the start then use  **appsody init incubator/nodejs-express simple**
+We use **"none”** in above template because we are initializing appsody in existing project , if you want to initialize from the start then use  **appsody init incubator/nodejs-express simple** the will create node.js application template with appsody.
 
- .Run Appsody init command to create the templete
- .Once the templete is successfully intailized , there will be  ".appsody-config.yml" created.
-
+6. Once the template is successfully initialized, you should see an **‘.appsody-config.yml’** file in the left navigation of your Visual Code editor.
 
 ![GitHub Logo](images/s5.png)
 
