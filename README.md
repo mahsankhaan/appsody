@@ -12,9 +12,9 @@ To complete the steps in this tutorial, you need to:
 ## Steps
 1.	[Clone the application](#1-clone-the-application)
 2.	[Open the application in Visual Studi Code](#2-open-the-application-in-visual-studio-code)
-4. [Initialize Appsody in your project]((#4-initialize-appsody-in-your-project)
-5.	[Change the application on your local machine](#5-change-the-application-on-your-local-machine)
-6.	[Build and deploy the application to Docker Hub](#6-build-and-deploy-the-application-to-Docker-Hub)
+3. [Initialize Appsody in your project]((#4-initialize-appsody-in-your-project)
+4.	[Change the application on your local machine](#5-change-the-application-on-your-local-machine)
+5.	[Build and deploy the application to Docker Hub](#6-build-and-deploy-the-application-to-Docker-Hub)
 
 ### 1. Clone the application
 
@@ -28,48 +28,40 @@ This tutorial uses a sample application you can find in this  [GitHub repo](http
 
 ### 2. Open the application in Visual Studio Code
 
-This step assumes, you have already installed [Visual Studio Code](https://code.visualstudio.com/). If not, please do so following their installation steps.
+This step assumes, you have already installed [Visual Studio Code](https://code.visualstudio.com/). If not, please do so following their installation steps.<!--ahsan: Do we need to show Visual Studio Code installation too ? -->
 
-Once Visual Studio Code is installed, open the application that you just cloned. <!--EM: You need to explain these steps. For instance, something like the following. When I ask for more descriptive text further down in this tutorial, I'm looking for something similar to the following:-->
-
-On the Welcome dashboard in VS Code, under the "Start" heading, click "Open folder . . . ". Navigate to where the Appsody folder has been downloaded and click **Open**.
+Follow the below steps:
+1. Open Visual Code Studio 
+2. Now you can see Welcome page, from the top select **file** option and under that select **open** .
+3. There will be a popup window  , navigate to where the Appsody folder has been downloaded (in our case it is in downloads repositry)
+4. Select the folder and click **open** 
+5. Now you will be able to see all the files in VS code.
 
 ![GitHub Logo](images/s2.png)
 
-### 3. Install Appsody
-<!--EM: I recommend deleting this entire section as it is just pulling out part of hte Appsody installation instructions. I just added that to the prerequisite section, so I don't think we need this.-->
 
-The following steps show you how to download Appsody for for **macOS**. If you are on different operating system, check out [Appsody's installation instructions](https://appsody.dev/docs/getting-started/installation) for more details.
-
-1. Open your terminal.
-2. If you don’t have **Homebrew** installed on your system, install it by running this command:
-**"/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"**
-3.	Once you have Homebrew installed, install Appsody by running: 
-**brew install appsody/appsody/appsody**
-
-4.	To check if Appsody is installed successfully, use the command `appsody list` in the terminal and you must be able to see the available templates.
-
-### 4. Initialize Appsody in your project
+### 3. Initialize Appsody in your project
 
 Before initializing Appsody, let's review some key Appsody terms: 
 
 * **Stack:** Appsody uses preconfigured technology stacks for popular runtimes and frameworks, such as Java with Eclipse and Node.js with Express.
 * **Template:** These templates offer a starting point for application development. You can customize a project template with your standards and specifications and share them across teams.
-* **Repo:** The repos are categorized as stable (tested and support all Appsody commands), incubating (these are actively being worked on) or experimental (not being actively worked on) depending on the content of the stack. <!--EM: I don't understand why the reader needs to know this term to complete the steps in this tutorial. This is a little confusing. I recommend deleting-->
+* **Repo:** The repos are categorized as stable (tested and support all Appsody commands), incubator (these are actively being worked on) or experimental (not being actively worked on) depending on the content of the stack. <!--EM: I don't understand why the reader needs to know this term to complete the steps in this tutorial. This is a little confusing. I recommend deleting . Ans: Well I just discussed this so that reader can have a better understanding about this command structure 
+"appsody init <repository-name>/<stack> <template>" , but if you want I can remove this -->
 
 For more, check out the [documentation](https://appsody.dev/docs/stacks/stacks-overview/)
 
 **Steps to initialize appsody:**
 
-1.	Open Visual Studio Code. Use **CTRL + Shift + `** to access CLI from your VS code.<!--EM: Is that the correct command?-->
-2.	From the CLI, enter `appsody list` to view all the available Appsody stacks.
+1.	Open Visual Studio Code. Use **CTRL + Shift + `**   to access terminal from your VS code and execute below commands  .<!--EM: Is that the correct command?   Ans : Yes , I have change "CLI" to "terminal  " -->
+2.	From the terminal, enter `appsody list` to view all the available Appsody stacks.
 3.	Review the list of stacks and find one that closely resembles your existing project. 
 
 The sample application in this tutorial is a **Node.js Expres app**, so we select that.
 
 ![GitHub Logo](images/s4.png)
 
-4.	Run  `appsody init incubator/nodejs-express none` command to initialize template. <!--EM: Is that the command formula? apposy init incubator / [name of the stack you want to use?]-->
+4.	Run  `appsody init incubator/nodejs-express none` command to initialize template. <!--EM: Is that the command formula? apposy init incubator / [name of the stack you want to use?] .  Ans: Yes , this is the most important command to initialize appsody , it can vary depending on the user's usecase that's why I shared few terms above.-->
    
 **NOTE**
 We use **"none”** in the above command because we are initializing Appsody in an existing project. If you want to initialize from start, then use `*appsody init incubator/nodejs-express simple`  which creates a Node.js application template with appsody.
@@ -78,7 +70,7 @@ We use **"none”** in the above command because we are initializing Appsody in 
 
 ![GitHub Logo](images/s5.png)
 
-### 5. Change the application on your local machine
+### 4. Change the application on your local machine
 
 When you initialize a source code project with Appsody, you get a local Appsody development container. Use the ‘appsody run’ command to start the development container in ‘run’ mode in the foreground. Appsody watches your local project directory for file changes and updates the application to reflect code changes as you develop.
 
@@ -94,7 +86,7 @@ Make some changes to your code and check for updates. Here are some minor change
 3.	Save the updated file using **ctrl+s**. 
 4.	Again, visit the URL **localhost:3000** and check for updates.
 
-### 6. Build and deploy the application to Docker Hub
+### 5. Build and deploy the application to Docker Hub
 
 After you finished creating your Appsody application on your local system, you can deploy it to a container platform. The following steps show you how to containerize it and upload it to Docker Hub. From there, you can easily deploy it to a suitable runtime infrastructure such as IBM Cloud.
 
