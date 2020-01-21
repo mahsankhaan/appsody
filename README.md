@@ -12,9 +12,9 @@ To complete the steps in this tutorial, you need to:
 ## Steps
 1.	[Clone the application](#1-clone-the-application)
 2.	[Open the application in Visual Studio Code](#2-open-the-application-in-visual-studio-code)
-3. [Initialize Appsody in your project](#4-initialize-appsody-in-your-project)
-4.	[Change the application on your local machine](#5-change-the-application-on-your-local-machine)
-5.	[Build and deploy the application to Docker Hub](#6-build-and-deploy-the-application-to-Docker-Hub)
+3. [Initialize Appsody in your project](#3-initialize-appsody-in-your-project)
+4.	[Change the application on your local machine](#4-change-the-application-on-your-local-machine)
+5.	[Build and deploy the application to Docker Hub](#5-build-and-deploy-the-application-to-Docker-Hub)
 
 ### 1. Clone the application
 
@@ -117,4 +117,4 @@ You can use this registry to push and pull the images.
  
  ## Conclusion 
 
-In this tutorial, you learned how to integrate Appsody in VS Code to minimize the local development workload, containerize the workload using Docker Hub to prepare it for deployment to any cloud platform that supports Docker images.
+In this tutorial, you learned how to integrate Appsody in VS Code to minimize the local development workload, containerize the application and upload to Docker Hub to prepare it for deployment to any cloud platform that supports Docker images.
