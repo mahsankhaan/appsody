@@ -110,8 +110,9 @@ You can use this registry to push and pull the images.
 1. Open your VS Code terminal.
 2. Run `docker login` command. You should see the newly created image name is `testing-appsody`.
 3. Run the command `docker tag testing-appsody ahsanoffical/appsody:testing`.
-4. Check that your local image is successfully uploaded to your **Docker Registry**.
-5. In the future, you can pull the image anywhere by using the `docker pull ahsanoffical/appsody:testing` command.
+4. Run the command `docker push ahsanoffical/appsody:testing`
+5. Check that your local image is successfully uploaded to your **Docker Registry**.
+6. In the future, you can pull the image anywhere by using the `docker pull ahsanoffical/appsody:testing` command.
 
  ![GitHub Logo](images/s13.png)
  
