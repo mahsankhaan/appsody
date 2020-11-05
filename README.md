@@ -58,10 +58,10 @@ For more, check out the [documentation](https://appsody.dev/docs/stacks/stacks-o
 
     ![GitHub Logo](images/s4.png)
 
-4.	Run the `appsody init incubator/nodejs-express none` command to initialize a template.
+4.	Run the `appsody init nodejs-express none` command to initialize a template.
    
 **NOTE**
-We use **"none”** in the above command because we are initializing Appsody in an existing project. If you want to initialize from start, then use `*appsody init incubator/nodejs-express simple`  which creates a Node.js application template with Appsody.
+We use **"none”** in the above command because we are initializing Appsody in an existing project. If you want to initialize from start, then use `*appsody init nodejs-express simple`  which creates a Node.js application template with Appsody.
 
 5. Once the template is successfully initialized, you should see the ‘.appsody-config.yml’ file name in the left navigation of your VS Code editor.
 
