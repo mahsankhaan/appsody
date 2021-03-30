@@ -2,7 +2,6 @@ applications:
     - path: .
       memory: 128M
       instances: 1
-      domain: mybluemix.net
       name: appsodyapp
       host: appsodyapp
       buildpack: sdk-for-nodejs
