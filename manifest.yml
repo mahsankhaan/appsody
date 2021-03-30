@@ -1,6 +1,4 @@
 applications:
-      memory: 128M
-      instances: 1
-      name: appsodyapp
-      host: appsodyapp
-      buildpack: sdk-for-nodejs
+- name: my-appsody
+  memory: 128M
+  buildpack: sdk-for-nodejs
