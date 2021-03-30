@@ -1,4 +1,4 @@
 applications:
-- name: my-appsody
+- name: my-appsodytest
   memory: 128M
   buildpack: sdk-for-nodejs
