@@ -1,4 +1,8 @@
- applications:
- - name: cloudnativeapp313
-   random-route: true
-   memory: 128M
+applications:
+    - path: .
+      memory: 128M
+      instances: 1
+      domain: mybluemix.net
+      name: myapptest
+      host: myapptest
+      buildpack: sdk-for-nodejs
