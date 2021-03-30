@@ -3,6 +3,6 @@ applications:
       memory: 128M
       instances: 1
       domain: mybluemix.net
-      name: myapptest
-      host: myapptest
+      name: appsodyapp
+      host: appsodyapp
       buildpack: sdk-for-nodejs
