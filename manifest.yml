@@ -1,5 +1,4 @@
 applications:
-    - path: .
       memory: 128M
       instances: 1
       name: appsodyapp
